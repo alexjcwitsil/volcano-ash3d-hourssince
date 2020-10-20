@@ -55,7 +55,8 @@ INSTALLDIR=/opt/USGS
 ##########  GNU Fortran Compiler  #############################################
 ifeq ($(SYSTEM), gfortran)
     FCHOME=/usr
-    FC = /usr/bin/gfortran
+    #FC = /usr/bin/gfortran
+    FC = /home/linuxbrew/.linuxbrew/bin/gfortran
     COMPINC = -I$(FCHOME)/include -I$(FCHOME)/lib64/gfortran/modules
     COMPLIBS = -L$(FCHOME)/lib64
 
